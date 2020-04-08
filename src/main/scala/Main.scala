@@ -16,9 +16,12 @@ object Main extends App {
   val businessCompositeFields =
     Map("properties" -> "array<struct<name:string, value:string>>")
 
-  val sqlInit = txt.test(businessKeyFields.asJava,
-    businessFields.asJava,
-    businessCompositeFields.asJava)
+//  val sqlInit = txt.test.render(businessKeyFields.asJava,
+//    businessFields.asJava,
+//    businessCompositeFields.asJava)
+//
+//  println(sqlInit)
 
-  println(sqlInit)
+    html.Hello.render("Jake")
+
 }
